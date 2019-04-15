@@ -23,18 +23,7 @@ void mostrar(int n[],int tam){
 	cout<<"\n";
 	
 }
-void burbuja(int n[],int tam){
-    int i,j,aux;
-	for(i=0;i<tam;i++){
-		for(j=0;j<tam-1;j++){
-			if(n[j]>n[j+1]){
-				aux=n[j];
-				n[j]=n[j+1];
-				n[j+1]=aux;
-			}
-		}
-	}	
-}
+
 void insercion(int n[],int tam){
 	int i,pos,aux;
 	for(int i=0;i<tam;i++){
