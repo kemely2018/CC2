@@ -16,8 +16,9 @@ int main(){
                 cout << a*b*d<< endl;
                 break;
             }
-		}
+	  }
 	}
+       return 0;
 }
 
 
