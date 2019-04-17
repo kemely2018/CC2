@@ -1,4 +1,8 @@
-
+/* El trío pitagórico es un conjunto de tres números naturales:
+                          a2 + b2 = c2
+   Por ejemplo: 32 + 42 = 9 + 16 = 25 = 52.
+   Existe exactamente un triplete de Pitágoras para el cual a+b+c = 1000.Encuentre el producto abc*/
+   
 #include<iostream>
 #include<cmath>
 using namespace std;
