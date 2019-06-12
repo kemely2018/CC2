@@ -1,8 +1,8 @@
-/* Refereencias :
+/* Referencias :
 Estructuras de Datos 01 Listas Enlazadas:
 https://www.youtube.com/watch?v=vAbCXlo7swc
 Estructuras de Datos 02 Listas Enlazadas :
---
+https://www.youtube.com/watch?v=DUcMisiiKLA
 */
 #include<iostream>
 using namespace std;
