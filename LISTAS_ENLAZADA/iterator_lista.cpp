@@ -130,8 +130,8 @@ Iterador_Lista<C> Lista_Enlazada<C>::buscar(C n){
 template <class C>
 void Lista_Enlazada<C>::buscar(Lista_Enlazada<C> l,Iterador_Lista<C> i,C v){
     for(i=l.get_inicio() ; i != l.get_final() ; ++i ){
-        if(*i==v){
-        	cout<<"Se encontro "<<*i<<endl;
+        if(-i==v){
+        	cout<<"Se encontro "<<-i<<endl;
         	break;
 		}
     }
@@ -139,7 +139,7 @@ void Lista_Enlazada<C>::buscar(Lista_Enlazada<C> l,Iterador_Lista<C> i,C v){
 template <class C>
 void Lista_Enlazada<C>::mostrar(Lista_Enlazada<C> l,Iterador_Lista<C> i){
     for(i=l.get_inicio() ; i != l.get_final() ; ++i )
-        cout << *i << " -> ";
+        cout << -i << " -> ";
     cout<<"NULL"<<endl;
 }
 template <class C>
@@ -169,7 +169,7 @@ class Iterador_Lista{
 			ite = ite->sig;
             return ite;
 		}
-		C operator*(){
+		C operator-(){
 			return ite->dato;
 		}
 		bool operator==(Nodo<C> *nodo){
@@ -183,16 +183,13 @@ class Iterador_Lista{
 
 int main()
 {
-	cout<<" \n-- LISTA ENLAZADA TIPO INT --\n"<<endl;
+    cout<<" \n-- LISTA ENLAZADA TIPO INT --\n"<<endl;
     Lista_Enlazada<int> lista_int;
     Iterador_Lista<int> iti;
     lista_int.push(5);
     lista_int.push(10);
     lista_int.push(50);
-    //lista_int.imprimir();
     lista_int.mostrar(lista_int,iti);
-    /*iti=lista_int.buscar(10);
-	cout<<"Se encontro "<<*iti<<endl;*/
     lista_int.buscar(lista_int,iti,10);
     cout<<"-Extraemos : " <<lista_int.pop()<<endl;
     cout<<"-Extraemos : " <<lista_int.pop()<<endl;
